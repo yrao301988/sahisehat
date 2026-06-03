@@ -10,8 +10,5 @@
     "cheerio": "^1.2.0",
     "fs": "^0.0.1-security",
     "javascript-obfuscator": "^5.4.3"
-  },
-  "devDependencies": {
-    "javascript-obfuscator": "^5.4.3"
   }
 }
