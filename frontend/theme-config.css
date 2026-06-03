@@ -1,0 +1,216 @@
+/* ==========================================================================
+   SAHISEHAT THEME CONFIGURATION SHEET
+   ==========================================================================
+   Developers can adjust text size, colors, fonts, and button styles here.
+   Changes can be made for each page or section separately without affecting
+   the whole application.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL FALLBACK DEFAULTS
+   -------------------------------------------------------------------------- */
+:root {
+   /* Fonts */
+   --global-font-family: 'Poppins', sans-serif;
+
+   /* Text Sizes */
+   /* --global-text-size-base: 0.95rem; */
+   --global-text-size-base: 18px;
+   /* Normal body text, labels, etc. */
+   --global-text-size-title: 2.2rem;
+   /* Main page headings */
+   --global-text-size-subtitle: 0.95rem;
+   /* Sub-headings */
+
+   /* Colors */
+   --global-text-color-main: var(--text-main);
+   --global-text-color-muted: var(--text-muted);
+
+   /* Buttons */
+   --global-btn-bg: var(--bg-color);
+   /* Default background for buttons */
+   --global-btn-color: var(--accent-color);
+   /* Default text/icon color for buttons */
+   --global-btn-radius: 40px;
+   /* Corner roundness */
+   --global-btn-padding: 14px 28px;
+   /* Button size/padding */
+   --global-btn-font-size: 0.9rem;
+   /* Button text size */
+}
+
+html {
+   --text-size-base: var(--global-text-size-base);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 1: LOGIN, SIGNUP & OTP VIEWS
+   -------------------------------------------------------------------------- */
+.login-wrapper {
+   /* Override font family or sizes if desired */
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: 0.9rem;
+   --theme-text-size-title: 1.8rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Primary buttons in login/signup flow */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 16px;
+   --theme-btn-padding: 12px 24px;
+   --theme-btn-font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 2: DASHBOARD VIEW (#view-dashboard)
+   -------------------------------------------------------------------------- */
+#view-dashboard {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: 0.95rem;
+   --theme-text-size-title: 2.0rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Button configuration specifically on Dashboard */
+   --theme-btn-bg: var(--global-btn-bg);
+   --theme-btn-color: var(--global-accent-color);
+   --theme-btn-radius: 40px;
+   --theme-btn-padding: 10px 20px;
+   --theme-btn-font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 3: GOVERNMENT HEALTH SCHEMES (#view-schemes)
+   -------------------------------------------------------------------------- */
+#view-schemes {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: var(--global-text-size-base);
+   --theme-text-size-title: 1.8rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Button configuration specifically on Schemes page */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 12px;
+   --theme-btn-padding: 10px 20px;
+   --theme-btn-font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 4: NEARBY PUBLIC HEALTH CENTRE (#view-centres)
+   -------------------------------------------------------------------------- */
+#view-centres {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: var(--global-text-size-base);
+   --theme-text-size-title: 1.8rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Button configuration specifically on Nearby Centres page */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 12px;
+   --theme-btn-padding: 10px 20px;
+   --theme-btn-font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 5: APPOINTMENTS VIEW (#view-appointments)
+   -------------------------------------------------------------------------- */
+#view-appointments {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: 0.95rem;
+   --theme-text-size-title: 2.0rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Buttons in Appointments flow */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 20px;
+   --theme-btn-padding: 12px 24px;
+   --theme-btn-font-size: 0.9rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 6: MY HEALTH RECORDS (#view-records)
+   -------------------------------------------------------------------------- */
+#view-records {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: var(--global-text-size-base);
+   --theme-text-size-title: 1.8rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Buttons specifically for Health Records flow */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 12px;
+   --theme-btn-padding: 10px 20px;
+   --theme-btn-font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 7: CONNECT FAMILY (#view-family)
+   -------------------------------------------------------------------------- */
+#view-family {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: var(--global-text-size-base);
+   --theme-text-size-title: 1.8rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Buttons specifically for Connect Family flow */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 12px;
+   --theme-btn-padding: 10px 20px;
+   --theme-btn-font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 8: EDIT PROFILE (#view-profile)
+   -------------------------------------------------------------------------- */
+#view-profile {
+   --theme-font-family: var(--global-font-family);
+   --theme-text-size-base: var(--global-text-size-base);
+   --theme-text-size-title: 1.8rem;
+   --theme-text-color-main: var(--global-text-color-main);
+   --theme-text-color-muted: var(--global-text-color-muted);
+
+   /* Buttons specifically for Edit Profile flow */
+   --theme-btn-bg: var(--accent-color);
+   --theme-btn-color: #ffffff;
+   --theme-btn-radius: 12px;
+   --theme-btn-padding: 10px 20px;
+   --theme-btn-font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   SECTION 9: INDIVIDUAL CUSTOM ELEMENT OVERRIDES (DEMO)
+   ==========================================================================
+   Here you can style specific individual elements that have custom classes added 
+   in the HTML file (web v4_temp.html).
+   ========================================================================== */
+
+/* 1. Login Page: The main Sign In button (dev-login-submit-btn) */
+.dev-login-submit-btn {
+   /* Example override: Change this specific button only */
+   /* background-color: #5A67D8 !important; */
+}
+
+/* 2. Dashboard Page: The "Manage" button in the upcoming appointment card */
+.dev-dashboard-manage-btn {
+   /* Example override: Change this specific button only */
+   /* background: #48BB78 !important; */
+   /* border-radius: 8px !important; */
+}
+
+/* 3. Dashboard Page: The ASHA worker "Call Now" button */
+.dev-asha-call-btn {
+   /* Example override: Change this specific button only */
+   /* background-color: #E6F4EA !important; */
+   /* border: 2px dashed #2F855A !important; */
+}
